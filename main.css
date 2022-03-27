@@ -1,0 +1,140 @@
+body {
+  background-color: #9b835f;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.tagline {
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #f9b23d;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.box {
+  text-align: center;
+}
+
+.result {
+  text-align: center;
+}
+
+input {
+  color: none !important;
+}
+
+.figure {
+  height: 10rem;
+  text-align: center;
+}
+
+.chosen {
+  background-color: #c4c4c4;
+  border-radius: 1rem;
+}
+
+.choice-hover:hover {
+  transform: scale(1.2) rotate(15deg);
+}
+
+.choice-player {
+  max-width: 5rem;
+  height: auto;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.choice-com {
+  max-width: 5rem;
+  height: auto;
+  margin: 1rem;
+}
+
+.player {
+  font-family: sans-serif;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.vs {
+  color: #bd0000;
+  font-size: 8rem;
+  font-weight: bolder;
+  font-family: sans-serif;
+  display: block;
+  margin-top: 12.5rem;
+  margin-bottom: 3rem;
+}
+
+.win-player,
+.win-com {
+  color: white;
+  font-family: sans-serif;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  margin-top: 10rem;
+  background-color: #4c9654;
+  transform: rotate(-15deg);
+  height: 10rem;
+  padding-top: 2.5rem;
+  margin-bottom: 10rem;
+}
+
+.win-player {
+  display: none;
+}
+
+.win-com {
+  display: none;
+}
+
+.draw {
+  color: white;
+  font-family: sans-serif;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  margin-top: 10rem;
+  background-color: #035b0c;
+  transform: rotate(-15deg);
+  height: 10rem;
+  padding-top: 3.5rem;
+  margin-bottom: 10rem;
+}
+
+.draw {
+  display: none;
+}
+
+.refresh {
+  text-align: center;
+}
+
+.refresh-btn {
+  max-width: 3rem;
+  height: auto;
+  cursor: pointer;
+}
+
+.refresh-btn:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 1200px) {
+  .vs {
+    margin-top: 2rem !important;
+  }
+}

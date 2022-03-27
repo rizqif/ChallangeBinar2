@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta author="Rizqi Firdaus" />
+    <link
+      rel="shortcut icon"
+      href="./assets/logo-games.ico"
+      type="image/x-icon"
+    />
+    <title>Rock Paper Scissor</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- header area  -->
+      <header>
+        <div class="row mb-3 justify-content-start">
+          <div class="col logo mt-2">
+            <img src="./assets/logo.svg" alt="Logo Rock Paper Scissors" />
+            <p class="tagline">ROCK PAPER SCISSORS</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- main area  -->
+      <main class="row justify-content-center mt-3">
+        <div class="col-xl-3 box">
+          <h1 class="player">PLAYER 1</h1>
+          <div class="row row-cols-1 justify-content-center">
+            <figure class="col-xl-7 pt-4 figure" id="rock">
+              <input
+                type="image"
+                src="./assets/batu.png"
+                class="choice-player choice-hover"
+                onclick="getChoice(0)"
+              />
+            </figure>
+            <figure class="col-xl-7 figure" id="paper">
+              <input
+                type="image"
+                src="./assets/kertas.png"
+                class="choice-player choice-hover"
+                onclick="getChoice(1)"
+              />
+            </figure>
+            <figure class="col-xl-7 figure" id="scissors">
+              <input
+                type="image"
+                src="./assets/gunting.png"
+                class="choice-player choice-hover"
+                onclick="getChoice(2)"
+              />
+            </figure>
+          </div>
+        </div>
+        <div class="col-xl-2 ml-3 mr-3 result">
+          <div class="row justify-content-center">
+            <div class="col vs" id="vs">
+              <p>VS</p>
+            </div>
+            <div class="col win-player" id="win-player">
+              <p>PLAYER 1</p>
+              <p>WIN</p>
+            </div>
+            <div class="col win-com" id="win-com">
+              <p>COM</p>
+              <p>WIN</p>
+            </div>
+            <div class="col draw" id="draw">
+              <p>DRAW</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 com">
+          <h1 class="player">COM</h1>
+          <div class="row row-cols-1 justify-content-center">
+            <figure class="col-xl-7 pt-4 figure" id="com-rock">
+              <img src="./assets/batu.png" alt="Rock" class="choice-com" />
+            </figure>
+            <figure class="col-xl-7 figure" id="com-paper">
+              <img src="./assets/kertas.png" alt="Paper" class="choice-com" />
+            </figure>
+            <figure class="col-xl-7 figure" id="com-scissors">
+              <img
+                src="./assets/gunting.png"
+                alt="Scissors"
+                class="choice-com"
+              />
+            </figure>
+          </div>
+        </div>
+      </main>
+
+      <!-- refresh button  -->
+      <section class="row mt-5 mb-5 refresh">
+        <figure onclick="refreshGame()" class="col">
+          <img src="./assets/refresh.png" class="refresh-btn" />
+        </figure>
+      </section>
+    </div>
+  </body>
+</html>
